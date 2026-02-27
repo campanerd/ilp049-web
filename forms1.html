@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form 
+        id="cadastro" 
+        name="cadastro"
+        method="post"
+        enctype="text/plain"
+        action="mailto:campanerdavi@gmail.com?subject=Teste Fatec&cc=campanerdavi@gmail.com&bcc=campanerdavi@gmail.com">
+        <fieldset>
+            <legend><em>Dados Pessoais</em></legend>
+            <p>
+                <input id="text" name="nome"
+                autofocus= "autofocus" placeholder="Digite seu nome..."
+                required="required" />
+            </p>
+                <!-- campos de entrada(input) -->
+            <p>  
+                <input type="number" tyid="cpf" name="cpf" placeholder="CPF">
+            </p>
+
+            <p>
+                <input id="mail" name="mail" placeholder="Email">
+            </p>
+            
+            <p>
+                <input id="ender" name="ender" placeholder="Endereço">
+            </p>
+
+            <p>
+                <input type="password" name="password" placeholder="Senha">
+            </p>
+
+            <p>
+                <input type="text"  id="escola" name="escola" placeholder="Escola"
+                value="FATEC-SP" \>
+            <p>
+               
+            <p>
+                <input type="text"  id="empresa" name="empresa" placeholder="Empresa"
+                disabled="disabled" \>
+
+            </p>
+
+            <p>
+                <textarea name="comentario" id="comentario" placeholder="Deixe um comentário"
+                maxlength="200"></textarea>
+            </p>
+
+            <p>
+                <textarea name="contrato" id="contrato" rows="3"
+                readonly="readonly">Este contrato dispõe sobre as cláusulas firmadas entre as partes envolvidas do Milorde Senhor Feudal Campas e seus subordinados...</textarea>
+            </p>
+                            <!-- checkbox(caixa de verificação) -->
+            <p>
+                <input type="checkbox" class="hobby" name="hob1"
+                value="futebol" checked="checked" /> Futebol
+            
+                <input type="checkbox" class="hobby" name="hob2"
+                value="Games" /> Games
+            
+                <input type="checkbox" class="hobby" name="hob3"
+                value="skate" /> Skate
+            </p>
+
+            <!-- Radio (botoes de escolha unica) -->
+            <p>
+                <input type="radio" class="escolar" name="escolaridade"
+                value="fundamental" /> Fundamental
+
+                <input type="radio" class="escolar" name="escolaridade"
+                value="medio" /> Médio
+    
+                <input type="radio" class="escolar" name="escolaridade"
+                value="superior" checked="checked" /> Superior
+            </p>
+
+            <!-- outros inputs -->
+             <p>
+                <input type="date" id="nascimento" name="nascimento" 
+                max="2020-01-01" /> Nascimento
+            </p>
+
+             <p>
+                <input type="number" id="nota" name="nota" min="0"
+                max="10" step="0.5"/> Nota da avaliação
+             </p>
+
+             <p>
+                <input type="file" id="curriculum" name="curriculum"
+                accept=".pdf, .docx" />Anexo
+             </p>
+
+             <!-- outros inputs - i -->
+              <p>
+                <input type="color" id="cor" name="color"
+                value="#ff0000" /> Cor (em Hexadecimal)
+              </p>
+
+              <p>
+                <input type="hidden" id="oculto" name="oculto"
+                value="Informação oculta ao usuário...">
+              </p>
+              
+              <!-- outros inputs - i -->
+               <p>
+                <input type="range" name="escopo" id="escopo"
+                min="0" max="40" range=".1" /> Temperatura
+               </p>
+
+               <p>
+                <input type="url" name="site" id="site" /> Endereço do site
+               </p>
+
+               <p>
+                <input type="week" id="semana" name="semana" />
+               </p>
+        </fieldset>
+        <button><em><b>Enviar os dados</b></em></button>
+
+        <button type="reset"> <em><b>Limpar</b></em></button>
+    </form>
+</body>
+</html>
