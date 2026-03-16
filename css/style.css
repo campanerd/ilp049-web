@@ -1,0 +1,23 @@
+input:invalid{
+    border-color: red;
+}
+
+input:invalid:required {
+    background-image: linear-gradient(to right, white, yellow);
+}
+
+input, 
+input:valid{
+    border-color: green;
+}
+
+p{color: rgb(55, 0, 255); font-size: 20px;}
+
+legend{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: overline;
+    text-shadow: 2cm;
+    
+
+}

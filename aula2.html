@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<link rel="stylesheet" href="css\style.css">
+
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <form 
+        id="cadastro" 
+        name="cadastro"
+        method="post"
+        enctype="text/plain"
+        action="mailto:campanerdavi@gmail.com?subject=Teste Fatec&cc=campanerdavi@gmail.com&bcc=campanerdavi@gmail.com">
+        <fieldset>
+            <legend><em>Dados Pessoais</em></legend>
+            <p>
+                <input type="text"   id="text" name="nome"
+                autofocus= "autofocus" placeholder="Digite seu nome..."
+                required />
+            </p>
+                <!-- campos de entrada(input) -->
+            <p>  
+                <input type="number" id="cpf" name="cpf" placeholder="CPF">
+            </p>
+
+            <p>
+                <input type="email"   id="mail" name="mail" placeholder="Email"
+                required="required">
+            </p>
+            
+            <p>
+                <input id="ender" name="ender" placeholder="Endereço">
+            </p>
+
+            <p>
+                <input type="password" class="password" name="password" placeholder="Senha">
+            </p>
+
+            <p>
+                <input type="text"  id="escola" name="escola" placeholder="Escola"
+                value="FATEC-SP" \>
+            <p>
+               
+            <p>
+                <input type="text"  id="empresa" name="empresa" placeholder="Empresa"
+                disabled="disabled" \>
+
+            </p>
+
+            <p>
+                <textarea name="comentario" id="comentario" placeholder="Deixe um comentário"
+                maxlength="200"></textarea>
+            </p>
+
+            <p>
+                <textarea name="contrato" id="contrato" rows="3"
+                readonly="readonly">Este contrato dispõe sobre as cláusulas firmadas entre as partes envolvidas do Milorde Senhor Feudal Campas e seus subordinados...</textarea>
+            </p>
+                            <!-- checkbox(caixa de verificação) -->
+            <p>
+                <input type="checkbox" class="hobby" name="hob1"
+                value="futebol" checked="checked" /> Futebol
+            
+                <input type="checkbox" class="hobby" name="hob2"
+                value="Games" /> Games
+            
+                <input type="checkbox" class="hobby" name="hob3"
+                value="skate" /> Skate
+            </p>
+
+            <!-- Radio (botoes de escolha unica) -->
+            <p>
+                <input type="radio" class="escolar" name="escolaridade"
+                value="fundamental" /> Fundamental
+
+                <input type="radio" class="escolar" name="escolaridade"
+                value="medio" /> Médio
+    
+                <input type="radio" class="escolar" name="escolaridade"
+                value="superior" checked="checked" /> Superior
+            </p>
+
+            <!-- outros inputs -->
+            <p>
+                <input type="date" id="nascimento" name="nascimento" 
+                max="2020-01-01" /> Nascimento
+            </p>
+
+            <p>
+                <input type="number" id="nota" name="nota" min="0"
+                max="10" step="0.5"/> Nota da avaliação
+            </p>
+
+            <p>
+                <input type="file" id="curriculum" name="curriculum"
+                accept=".pdf, .docx" />Anexo
+            </p>
+
+             <!-- outros inputs - i -->
+            <p>
+                <input type="color" id="cor" name="color"
+                value="#ff0000" /> Cor (em Hexadecimal)
+            </p>
+
+            <p>
+                <input type="hidden" id="oculto" name="oculto"
+                value="Informação oculta ao usuário...">
+            </p>
+              
+              <!-- outros inputs - i -->
+            <p>
+                <input type="range" name="escopo" id="escopo"
+                min="0" max="40" range=".1" /> Temperatura
+            </p>
+
+            <p>
+                <input type="url" name="site" id="site" /> Endereço do site
+            </p>
+
+            <p>
+                <input type="week" id="semana" name="semana" />
+            </p>
+
+            <p>
+                <select name="cores" id="cores">
+                    <optgroup label="Cores frias">
+                        <option value="Azul">Azul</option>
+                        <option value="Verde"selected>Verde</option>
+                    </optgroup>
+                    <optgroup
+                        label="Cores Quentes">
+                        <option value="Vermelho">Vermelho</option>
+                        <option value="Amarelo">Amarelo</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <!-- DATA LIST (input com lista de opções) -->
+            <p>
+                <input list="browsers" id="nav" name="nqv"/>
+                <datalist id="browsers">
+                    <option value="Edge"></option>
+                    <option value="Chrome"></option>
+                    <option value="Firefox"></option>
+                    <option value="Opera"></option>
+                    <option value="Safari"></option>
+                </datalist>
+            </p>
+
+            <!-- Botoes de envio com imagem -->
+            <p>
+                <input type="image" src="https://cdn-icons-png.flaticon.com/512/4946/4946354.png"
+                width="48" height="48" alt="Submit" title="Enviar dados"/>
+                <b>Enviar</b> <br>
+
+                <button type="reset">
+                    <img src="https://cdn-icons-png.flaticon.com/512/306/306776.png" 
+                    width="48" height="48" alt="Reset" title="Resetar"/>
+                </button>
+            </p>
+
+            <!-- Botoes de envio com endereço de email -->
+            <p>
+                <input id="bt_enviar" type="submit" value="Envio para..."
+                formaction="mailto:campanerdavi@gmail.com?subject=Dados...">
+            </p>
+
+            <!-- Botao programado com JS: -->
+            <p>
+                <input type="button" value="Botão genérico"
+                onclick="alert('Hoje é sexta feira!!')"
+                />
+            </p>
+
+        </fieldset>
+        <button><em><b>Enviar os dados</b></em></button>
+
+        <button type="reset"> <em><b>Limpar</b></em></button>
+
+    </form>
+
+    
+            <!-- Exibir o resultado de um cálculo  -->
+    <form 
+        id="calculo" name="calculo" action="#"
+        oninput="x.value = parseInt(a.value) + parseInt(b.value)" >
+        De 0<input type="range" id="a" name="a" value="0">á 100
+        +<input type="number" id="b" name="b" value="10">
+        = <output name="x" for="a b"></output>
+    </form>
+</body>
+</html>
