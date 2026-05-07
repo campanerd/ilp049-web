@@ -1,0 +1,131 @@
+:root {
+  --fonte-principal: 'Source Serif 4', serif;
+  --fonte-titulo: 'Playfair Display', serif;
+}
+
+body { 
+  font-family: var(--fonte-principal); 
+  margin: 20px; 
+}
+
+/* Cabeçalho limpo sem imagem */
+header { 
+  border: 1px solid #000; 
+  padding: 30px; 
+  text-align: center; 
+  background-color: #fff;
+}
+
+header h1 {
+  font-family: var(--fonte-titulo);
+  margin: 0;
+}
+
+header h1 span { 
+  font-style: italic; 
+  color: #ff0000; 
+}
+
+nav { 
+  border: 1px solid #000; 
+  margin: 10px 0; 
+}
+
+nav ul { 
+  list-style: none; 
+  display: flex; 
+  justify-content: space-around; 
+  padding: 10px; 
+  margin: 0; 
+}
+
+nav ul li a { 
+  text-decoration: none; 
+  color: #000; 
+  font-weight: bold; 
+  text-transform: uppercase;
+}
+
+/* Container tracejado que envolve os boxes principal e secundário */
+.container-geral {
+  border: 2px dashed #000;
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /* Um em cima do outro */
+  gap: 20px;
+}
+
+/* Box Principal (Vermelho) */
+.box-principal {
+  border: 2px solid #ff0000;
+  padding: 15px;
+}
+
+/* Sub-boxes (Amarelo) */
+.sub-box-amarelo {
+  border: 2px solid #ffcc00;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.sub-box-amarelo:last-child { margin-bottom: 0; }
+
+.galeria { 
+  display: flex; 
+  justify-content: space-between; 
+}
+
+.galeria figure { 
+  width: 23%; 
+  text-align: center; 
+  margin: 0;
+}
+
+.galeria svg { 
+  width: 100%; 
+  display: block;
+}
+
+/* Box Secundário (Azul) */
+.box-secundario {
+  border: 2px solid #0000ff;
+  padding: 15px;
+}
+
+/* Elementos de mídia lado a lado dentro do box azul */
+.media-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.media-item {
+  flex: 1;
+  border: 1px solid #8b4513; /* Borda marrom */
+  padding: 10px;
+  background: #fdfdfd;
+}
+
+.media-item label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+video, audio, iframe { 
+  width: 100%; 
+  display: block; 
+}
+
+iframe { 
+  height: 150px; 
+  border: none; 
+}
+
+/* Rodapé */
+footer { 
+  border: 1px solid #000; 
+  text-align: center; 
+  padding: 20px; 
+  margin-top: 15px; 
+}
